@@ -3,6 +3,7 @@ main{
 }
 
 .main ul{
+    display: flex;
     margin: 0;
     padding: 0;
 }
@@ -10,19 +11,16 @@ main{
 .main li {
     list-style: none;
     display: block;
+    position: relative;
 }
 
-.site-header{
-    display: flex;
-    justify-content: space-between;
-}
-
-.site-title{
-    font-size: 2rem;
-}
-
-.site-title a{
+.main li a {
     display: block;
-    color: black;
+    padding: 0.5rem 1rem;
     text-decoration: none;
+    color: black;
+}
+
+.main ul ul {
+    display: none;
 }
