@@ -3,7 +3,6 @@ main{
 }
 
 .main ul{
-    display: flex;
     margin: 0;
     padding: 0;
 }
@@ -23,4 +22,21 @@ main{
 
 .main ul ul {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 16rem;
+}
+
+.main > ul {
+    display: flex;
+}
+
+.main li:hover > a,
+.main a {
+    text-decoration: underline;
+}
+
+.main li:hover > ul{
+    display: block;
 }
